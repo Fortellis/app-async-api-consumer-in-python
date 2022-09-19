@@ -26,7 +26,7 @@ class Event(Resource):
             json.dump(file_data, file, indent = 2)
         return ('', 202)
 
-api.add_resource(Event, '/hello/world/event')
+api.add_resource(Event, '/event/{yourChannel}')
 
 if __name__ == '__main__':
     app.run(debug=True)
